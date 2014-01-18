@@ -51,7 +51,7 @@ and finally you can roll back the values to a specify version
 
 ## How it works
 
-Everytime the set/unset commands are executed a copy of the config vars is saved in the HEROKU_CONFIG_VERSIONS variable,
+Everytime the set/unset commands are executed a copy of the config vars is saved in the `HEROKU_CONFIG_VERSIONS` variable,
 this variable save a hash that use the current date as the key and the current value of the config vars as value. 
 
 The hash is serialized (JSONfied, compressed and Base64 encoded) and hidden from the list of config vars but can be see using the `config:get` command.
