@@ -10,3 +10,8 @@ rescue LoadError
   MSG
   exit
 end
+
+if RUBY_VERSION < "2.0.0"
+  puts "heroku-config-versions - requires Ruby 2.0 or greater."
+  exit
+end
