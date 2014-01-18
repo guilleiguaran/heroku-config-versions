@@ -25,13 +25,13 @@ module ConfigExtensions
   end
 
   def set
-    super
     update_config_backup
+    super
   end
 
   def unset
-    super
     update_config_backup
+    super
   end
 
   private
