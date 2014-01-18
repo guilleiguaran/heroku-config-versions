@@ -41,6 +41,10 @@ or see the values saved for a specify version.
 
 and finally you can roll back the values to a specify version
 
+    $ heroku config
+    === gentle-everglades-6844 Config Vars
+    DATABASE_URL: oooooops
+
     $ heroku config:rollback 20140118053023
     Rolling back gentle-everglades-6844 config vars to version 20140118053023... done
     
