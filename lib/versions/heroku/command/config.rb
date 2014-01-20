@@ -142,7 +142,7 @@ class Heroku::Command::Config
       if version_vars = versions[version]
         version_vars.reject! {|k,v| k =~ /HEROKU_POSTGRES/}
         action("Rolling back #{app} config vars to version #{version}") do
-          status(api.put_config_vars(app, version_vars))
+          api.put_config_vars(app, version_vars)
         end
         update_config_backup
       else
