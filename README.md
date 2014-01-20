@@ -52,6 +52,9 @@ and finally you can roll back the values to a specify version
     === gentle-everglades-6844 Config Vars
     DATABASE_URL: postgres://iptvevqivluxcw:WnleruDXZeBlNO5N7j7oogk-aA@ec2-54-197-238-242.compute-1.amazonaws.com:5432/d36tp49719m0p
 
+Also you can roll back app code and config version simultaneously
+
+    $ heroku releases:rollback v24 20140118053023
 
 ## How it works
 

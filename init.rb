@@ -1,4 +1,6 @@
+require "versions/heroku/command/shared"
 require "versions/heroku/command/config"
+require "versions/heroku/command/releases"
 
 begin
   require "heroku-api"
